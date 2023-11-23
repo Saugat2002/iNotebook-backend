@@ -4,7 +4,7 @@ const { Schema } = mongoose;
 const NoteSchema = new Schema({
     title: {
         type: String, 
-        required: true
+        required: true,
     },
     description: {
         type: String, 
@@ -12,11 +12,11 @@ const NoteSchema = new Schema({
     },
     tag: {
         type: String,
-        default: "General" 
+        default: "General" ,
     },
     date: {
         type: Date, 
-        default: Date.now
+        default: Date.now,
     },
 });
 
